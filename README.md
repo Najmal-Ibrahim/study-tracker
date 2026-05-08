@@ -27,7 +27,7 @@ GitHub Automation
 
 ## 📚 AI Mastery Progress
 
-### Total Pomodoros: 4
+### Total Pomodoros: 5
 
 ### Scratch
 `████░░░░░░░░░░░░░░░░`
@@ -35,9 +35,9 @@ GitHub Automation
 Pomodoros: 4
 
 ### Mlops
-`░░░░░░░░░░░░░░░░░░░░`
+`█░░░░░░░░░░░░░░░░░░░`
 
-Pomodoros: 0
+Pomodoros: 1
 
 ### System_Design
 `░░░░░░░░░░░░░░░░░░░░`
