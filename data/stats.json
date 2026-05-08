@@ -1,10 +1,10 @@
 {
   "topics": {
     "scratch": 4,
-    "mlops": 1,
+    "mlops": 2,
     "system_design": 0
   },
-  "total_pomodoros": 4,
+  "total_pomodoros": 5,
   "current_streak": 1,
   "longest_streak": 1,
   "last_study_date": "2026-05-08"
