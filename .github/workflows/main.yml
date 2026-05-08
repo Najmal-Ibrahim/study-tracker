@@ -15,16 +15,8 @@ jobs:
 
     steps:
 
-      # --------------------------------
-      # Checkout Repository
-      # --------------------------------
-
       - name: Checkout Repository
         uses: actions/checkout@v4
-
-      # --------------------------------
-      # Setup Python
-      # --------------------------------
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -32,25 +24,13 @@ jobs:
         with:
           python-version: '3.11'
 
-      # --------------------------------
-      # Install Dependencies
-      # --------------------------------
-
       - name: Install Dependencies
         run: |
           pip install -r requirements.txt
 
-      # --------------------------------
-      # Run README Generator
-      # --------------------------------
-
-      - name: Update README
+      - name: Run README Generator
         run: |
           python scripts/update_readme.py
-
-      # --------------------------------
-      # Commit Changes
-      # --------------------------------
 
       - name: Commit Updated README
         run: |
