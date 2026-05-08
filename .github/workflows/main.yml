@@ -1,0 +1,65 @@
+name: Update README
+
+on:
+  push:
+    paths:
+      - 'data/stats.json'
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      # --------------------------------
+      # Checkout Repository
+      # --------------------------------
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # --------------------------------
+      # Setup Python
+      # --------------------------------
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+
+        with:
+          python-version: '3.11'
+
+      # --------------------------------
+      # Install Dependencies
+      # --------------------------------
+
+      - name: Install Dependencies
+        run: |
+          pip install -r requirements.txt
+
+      # --------------------------------
+      # Run README Generator
+      # --------------------------------
+
+      - name: Update README
+        run: |
+          python scripts/update_readme.py
+
+      # --------------------------------
+      # Commit Changes
+      # --------------------------------
+
+      - name: Commit Updated README
+        run: |
+
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+
+          git add README.md
+
+          git diff --cached --quiet || git commit -m "Auto-update README"
+
+          git push
