@@ -1,22 +1,20 @@
 {
   "topics": {
     "scratch": 4,
-    "mlops": 2,
+    "mlops": 3,
     "system_design": 0
   },
-
   "daily_logs": {
     "2026-05-08": {
       "scratch": 4,
       "mlops": 2
+    },
+    "2026-05-11": {
+      "mlops": 1
     }
   },
-
-  "total_pomodoros": 6,
-
+  "total_pomodoros": 7,
   "current_streak": 1,
-
   "longest_streak": 1,
-
-  "last_study_date": "2026-05-08"
+  "last_study_date": "2026-05-11"
 }
