@@ -4,8 +4,19 @@
     "mlops": 2,
     "system_design": 0
   },
-  "total_pomodoros": 5,
+
+  "daily_logs": {
+    "2026-05-08": {
+      "scratch": 4,
+      "mlops": 2
+    }
+  },
+
+  "total_pomodoros": 6,
+
   "current_streak": 1,
+
   "longest_streak": 1,
+
   "last_study_date": "2026-05-08"
 }
